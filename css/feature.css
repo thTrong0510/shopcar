@@ -1,0 +1,207 @@
+.features {
+    width: 100%;
+    padding: 50px 100px;
+    margin: 2rem auto;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.feature {
+    margin: auto;
+    height: 450px;
+    width: 40%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.feature_img > img {
+    display: inline-block;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.feature_intro > h3 {
+    text-align: center;
+}
+
+.feature_intro > p {
+    text-align: center;
+    color: gray;
+}
+
+.feature_button {
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    margin: 10px 0px;
+}
+
+.feature_button > a {
+    display: inline-block;
+    height: 20px;
+}
+
+.feature_button > a > button {
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.feature_button > a > button:hover {
+    outline: 2px solid white;
+}
+
+@media screen and (max-width: 1024px) {
+    .features {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .feature_img > img {
+        width: 90%;
+    }
+    .feature_intro > p {
+        font-size: 0.9rem;
+    }
+    .feature { 
+        height: 300px;
+    }
+
+}
+
+
+@media screen and (max-width: 800px) {
+    .feature {
+        width: 80%;
+    }
+
+    .feature:first-child {
+        margin-bottom: 2rem;
+    }
+
+    .feature_img > img {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .feature_img > img {
+        width: 65%;
+    }
+    .feature {
+        height: 290px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .feature_img > img {
+        width: 70%;
+    }
+   
+    .feature_button > a > button {
+        width: 120px;
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .feature_intro > p {
+        font-size: 0.8rem;
+    }
+
+    .feature_img > img {
+        width: 75%;
+    }
+
+    .feature {
+        height: 270px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .feature_img > img {
+        width: 80%;
+    }
+    .feature {
+        padding: 10px;
+        height: 240px;
+    }
+    .feature_intro > h3 {
+        font-size: 0.9rem;
+    }
+    .feature_intro > p {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .feature_img > img {
+        width: 90%;
+    }
+    .feature {
+        height: 220px;
+    }
+    .feature_intro > h3 {
+        font-size: 0.8rem;
+    }
+    .feature_intro > p {
+        font-size: 0.6rem;
+    }
+    .feature_button > a > button {
+        width: 100px;
+        height: 20px;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .feature_img > img {
+        width: 95%;
+    }
+    .feature {
+        height: 190px;
+    }
+    .feature_intro > h3 {
+        font-size: 0.75rem;
+    }
+    .feature_intro > p {
+        font-size: 0.5rem;
+    }
+    .feature_button > a > button {
+        width: 80px;
+        height: 15px;
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .feature_img > img {
+        width: 100%;
+    }
+    .feature {
+        height: 170px;
+    }
+    .feature_intro > h3 {
+        font-size: 0.7rem;
+    }
+    .feature_intro > p {
+        font-size: 0.4rem;
+    }
+    .feature_button > a > button {
+        width: 60px;
+        height: 10px;
+        font-size: 0.4rem;
+    }
+}

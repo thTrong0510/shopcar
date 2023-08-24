@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CarShop</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="short icon" href="image/logo.png">
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/build_and_price.css">
+    <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="css/go_to_top.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/sign_up.css">
+    <link rel="stylesheet" href="css/start_page.css">
+    <link rel="stylesheet" href="css/feature.css">
+    <link rel="stylesheet" href="css/comment_page.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="./css/line.css">
+
+</head>
+<body>
+
+    <header class="flex header">
+        <div class="flex header">
+            <div class="logo">
+                <i class="fa-brands fa-slack"></i>
+            </div>
+            <div><h1><a href="bai_tap_lon.html">My CarShop</a></h1></div>
+        </div>      
+        <ul class="flex main menus" id="main">
+            <li class="has_child" id="hover"><span id="hover1">SHOP</span>
+                <ul class="subject" id="child_menu" >
+                    <li><a>View Cars</a></li>
+                    <li><a>Specials</a></li>
+                    <li><a>Get Financing</a></li>
+                    <li><a>Home Delivery</a></li>
+                    <li><a>Curbside Pickup</a></li>
+                    <li><a>About Buying Online</a></li>
+                </ul>
+            </li>
+            <li><span>TRADE/SELL</span></li>
+            <li><span><a href="why_carshop.html" style="color:aliceblue">WHY CARSHOP</a></span></li>
+            <li><span>CAREERS</span></li>
+            <li><span>SERVICE</span></li>
+            <li><span>STORES</span></li>
+        </ul>
+        <ul class="flex icons menus ">
+            <li><span><i class="icon fa-solid fa-magnifying-glass" id="search-buttom"></i></span></li>
+            <li id="phone"><span><i class="icon fa-solid fa-phone"></i></span>
+                <ul class="subject" id="child_phone">    
+                    <li><a>0328 481 957</a></li>
+                </ul>   
+            </li>
+            <li id="toggle"><span>  
+                <i class="fas fa-bars icon"></i>
+                <i class="fas fa-xmark icon"></i>
+                </span>
+            </li>
+        </ul>
+        <div class="search-form" id="search">
+            <div>
+                <input type="search" id="search-box" placeholder="Tìm Kiếm..."/>
+                <a><label for="search-box" class="fa-solid fa-magnifying-glass"></label></a>
+            </div>
+            <ul class="list-search">
+
+            </ul>
+        </div>
+    </header>
+
+
+
+    <!--go to top Trong-->
+    <div id="progress">
+        <span id="progress-value"><i class="fa-solid fa-angle-up" style="color: black;"></i></span>
+    </div>
+
+    <!--account Trong-->
+    <label for="check_account">
+        <div id="account"><a><i class="fa-solid fa-user-plus"></i></a></div>
+    </label>
+    <!--log out Trong-->
+    <div class="account_log_out">
+		<button>Log Out</button>
+        <div class="log_out_delete">
+            <button >X</button>
+        </div>
+	</div>
+
+    <!--Login-->
+    <div class="login_container">
+		<h1 class="login_title">Login</h1>
+	  	<div class="login_info">
+			<div class="login_item"><label for="login_email">Email</label><input type="text" id="login_email" name="login_email" placeholder="Enter Email"/></div>
+		  	<div class="login_item"><label for="login_password">Password</label><input type="password" id="login_password" name="login_password" placeholder="Enter Password"/></div>
+		  	<div class="login_item"><span class="login_error_text"></span></div>
+	  	</div>
+        <!--line Registration-->
+        <p class="login_line"><button>Registration</button></p>
+
+	  	<div class="login_btn"><input type="button" value="Login"></div>
+
+		<div><button class="login_delete">X</button></div>
+        
+  	</div>
+    <!--sign up-->
+    <div class="disable_all">
+        <div class="sign_container">
+            <h1 class="sign_title">Registration</h1>
+            <div class="sign_info">
+    
+                <div class="sign_item">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter Username"/>
+                </div>
+                <div class="sign_item">
+                    <label for="sign_email">Email</label>
+                    <input type="text" id="sign_email" name="sign_email" placeholder="Enter Email"/>
+                </div>
+              
+                <div class="sign_item">
+                    <label for="sign_password">Password</label>
+                    <input type="password" id="sign_password" name="sign_password" placeholder="Enter Password"/>
+                </div>
+                <div class="sign_item">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password"/>
+                </div>
+    
+                <div class="sign_item">
+                    <span class="sign_error_text"></span>
+                </div>
+    
+            </div>
+    
+            <div class="sign_btn">
+                <input type="button" value="Register">
+            </div>
+    
+            <div>
+                <button class="sign_delete">X</button>
+            </div>
+        </div>
+        <!---->
+    </div>
+    
+    <!--Start Page Trong-->
+    <div class="figure-head_container">
+        <div id="figure-head_slide"></div>
+    </div>
+    
+           
+   
+    <!--slide-->
+    <div id="formLide">
+        <div id="slide">
+            
+        </div>
+    </div>
+    <!--------->
+    <div class="button">
+        <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+		<button id="next"><i class="fa-solid fa-angle-right"></i></button>
+    </div> 
+    
+    <!--line-->
+    <h3 class="line"><span><i class="fa-brands fa-squarespace"></i></span></h3>
+
+    <!--Features-->
+    <div class="features">
+
+        <div class="feature">
+            <div class="feature_intros">
+                <div class="feature_img"><img src="./treasure/img_find.jpeg" alt="feature_image"></div>
+                <div class="feature_intro">
+                    <h3>Find Your Fit</h3>
+                    <p>Not sure what you want? Answer a few questions to find what fits you best.</p>
+                </div>
+            </div>
+            <div class="feature_button">
+                <a href="child_feature.html" target="_self">
+                    <button>Start Quiz</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="feature">
+            <!--build and price-->
+            <div class="feature_intros">
+                <div class="feature_img"><img src="./treasure/img_build.jpg" alt="feature_image"></div>
+                <div class="feature_intro">
+                    <h3>Build and price</h3>
+                    <p>Choose the make, model, trim, and, options your want.</p>
+                </div>
+            </div>
+            <div class="feature_button build">
+                <a href="build_and_price.html" target="_self">
+                    <button>Build your car</button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    
+    <!--line-->
+    <h3 class="line"><span><i class="fa-brands fa-squarespace"></i></span></h3>
+
+
+    <!--Comment Trong-->
+    <div class="comment_part">
+
+        <div class="comment_part_title">
+            <h3>What People Are Saying</h3>
+        </div>
+
+        <div class="comments">
+            <div class="comment">
+                <div class="comment_des">
+                    <span>“@TrueCar seriously helped me with my car deal. Anyone looking to get a car should just use it.&#128521; #lifesaver”</span>
+                    <div class="comment_information">
+                        <a><i class="fab fa-twitter"></i></a>
+                        <span>@vrajeshkanna1</span>
+                    </div>
+                </div>
+                <div class="comment_image">
+                    <img src="https://consumer.tcimg.net/assets/_next/static/images/athziri-27aba0eeb0f540b560b43ee20ddade5c.jpg?auto=format&h=86&w=86 1x, https://consumer.tcimg.net/assets/_next/static/images/athziri-27aba0eeb0f540b560b43ee20ddade5c.jpg?auto=format&h=172&w=172 2x">
+                </div>
+                
+            </div>
+            <div class="comment">
+                <div class="comment_des">
+                    <span>“I researched and discovered my amazing on @TrueCar, long before buying cars online was popular.”</span>
+                    <div class="comment_information">
+                        <a><i class="fab fa-twitter"></i></a>
+                        <span>@vrajeshkanna1</span>
+                    </div>
+                </div>
+                <div class="comment_image">
+                    <img src="https://consumer.tcimg.net/assets/_next/static/images/lee-tyndall-08613dc341694b8632cb058b62728196.jpg?auto=format&h=86&w=86 1x, https://consumer.tcimg.net/assets/_next/static/images/lee-tyndall-08613dc341694b8632cb058b62728196.jpg?auto=format&h=172&w=172 2x">
+                </div>
+                
+            </div>
+            <div class="comment">
+                <div class="comment_des">
+                    <span>“TrueCar is awesome. Reduces all the annoying parts of the new car purchase.”</span>
+                    <div class="comment_information">
+                        <a><i class="fab fa-twitter"></i></a>
+                        <span>@vrajeshkanna1</span>
+                    </div>
+                </div>
+                <div class="comment_image">
+                    <img src="https://consumer.tcimg.net/assets/_next/static/images/monte-pittman-427519c51ffb75ce6febe063a34d9ac1.jpg?auto=format&h=86&w=86 1x, https://consumer.tcimg.net/assets/_next/static/images/monte-pittman-427519c51ffb75ce6febe063a34d9ac1.jpg?auto=format&h=172&w=172 2x">
+                </div>
+                
+            </div>
+            <div class="comment">
+                <div class="comment_des">
+                    <span>“Did you check out @TrueCar? I used them. Amazing”</span>
+                    <div class="comment_information">
+                        <a><i class="fab fa-twitter"></i></a>
+                        <span>@vrajeshkanna1</span>
+                    </div>
+                </div>
+                <div class="comment_image">
+                    <img src="https://consumer.tcimg.net/assets/_next/static/images/rajesh-kanna-e52d13a0e708d8e8ad92823299d0f6a6.jpg?auto=format&h=86&w=86 1x, https://consumer.tcimg.net/assets/_next/static/images/rajesh-kanna-e52d13a0e708d8e8ad92823299d0f6a6.jpg?auto=format&h=172&w=172 2x">
+                </div>
+                
+            </div>
+            <div class="comment">
+                <div class="comment_des">
+                    <span>Everything is good, the CarShop is a good choice for me!!! &#128525;</span>
+                    <div class="comment_information">
+                        <a><i class="fab fa-twitter"></i></a>
+                        <span>@vrajeshkanna1</span>
+                    </div>
+                </div>
+                <div class="comment_image">
+                    <img src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?stp=cp0_dst-png_p86x86&_nc_cat=1&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=pYLa-lN8pc4AX8VAikU&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfC-TzMn9hnCEz7MufAy72HA7uJGMGKMXKpuZYkJco3JMg&oe=64F071B8">
+                </div>
+                
+            </div>
+        </div>
+        <div class="check_comment">
+            <div>
+                <label for="comment_limit_check">
+                    <div id="comment_limit">
+                        <span>See All Comment</span>
+                        <input type="checkbox" id="comment_limit_check">
+                    </div>
+                </label>
+            </div>
+            <div>
+                <label for="check_comment_yours">
+                    <div id="check_yours_comment_">
+                        <span>Comment</span>
+                        <input type="checkbox" id="check_comment_yours">
+                    </div>
+                </label>
+            </div>
+            <div id="yours_comment">
+                <div class="yours_comment_image">
+                    <img src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?stp=cp0_dst-png_p86x86&_nc_cat=1&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=pYLa-lN8pc4AX8VAikU&_nc_ht=scontent.fsgn5-9.fna&oh=00_AfC-TzMn9hnCEz7MufAy72HA7uJGMGKMXKpuZYkJco3JMg&oe=64F071B8">
+                </div>
+                <div class="yours_comment_text">
+                    <input type="text" placeholder="Comment Here...">
+                </div>
+                <div class="yours_comment_button">
+                    <button>Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer Trong-->
+    <footer class="footer">
+        <div id="footer_container">
+            <div id="container__details"></div>
+            <div id="footer_app-social-icon" >
+                <div class="footer_icons"></div>
+                <div class="footer_apps"></div>
+            </div>
+            <div class="footer_infor">
+                <div class="footer_infor-first">
+                    <p>For questions about the TrueCar Auto Buying Service please call <a>0867663653</a></p>
+                    <p>&#9400; and <sup>TM</sup> TrueCar, Inc. All rights reserved. Vehicle photos &#9400; Evox Images &#9400; 2023 Chrome Data Solutions, LP</p>
+                </div>
+                <div class="footer_infor-second">
+                    <div><a>Terms of Service</a></div>
+                    <div><a>Privacy PolicyDo</a></div>
+                    <div><a>Not Sell Or Share My Personal Information</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="javascript/bai_tap_lon.js"></script>
+    <script src="javascript/search.js"></script>
+    <script src="./javascript/read_data_footer.js"></script>
+    <script src="./javascript/read_data_slide.js"></script>
+    <script src="./javascript/read_data_startpage.js"></script>
+    <script src="javascript/go_to_top.js"></script>
+    <script src="javascript/account.js"></script>
+    <script src="javascript/log_out.js"></script>
+    <script src="javascript/login_sign.js"></script>
+    <script src="javascript/start_page.js"></script>
+    <script src="javascript/comment_page.js"></script>
+
+
+</body>
+</html> 

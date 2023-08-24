@@ -1,0 +1,4 @@
+[
+    {"image_car_start_page" : ["./treasure/car_1.jpg", "./treasure/car_2.jpg", "./treasure/car_3.jpg", "./treasure/car_4.jpg", "./treasure/car_5.jpg", "./treasure/car_6.jpg"]},
+    {"name_car_start_page": ["Acura Integra", "Ford Mustang", "Toyota Prius", "Station Wagon", "Luxury Cars", "Sport Utility"]}
+]

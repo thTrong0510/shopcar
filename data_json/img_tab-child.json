@@ -1,0 +1,8 @@
+[
+    {"img": ["./image/img1.jpg", "./image/img1_1.jpg", "./image/img1_2.jpg", "./image/img1_3.jpg"], "name": "Bugatti Bolide"},
+    {"img": ["./image/img2.jpg", "./image/img2_1.jpg", "./image/img2_2.jpg", "./image/img2_3.jpg"], "name": "Bugatti Chiron"},
+    {"img": ["./image/img3.jpg", "./image/img3_1.jpg", "./image/img3_2.jpg", "./image/img3_3.jpg"], "name": "Lamborghini Hybrid"},
+    {"img": ["./image/img4.jpg", "./image/img4_1.jpg", "./image/img4_2.jpg", "./image/img4_3.jpg"], "name": "Farnova Othello"},
+    {"img": ["./image/img5.jpg", "./image/img5_1.jpg", "./image/img5_2.jpg", "./image/img5_3.jpg"], "name": "Mercedes-Benz AMG GT"},
+    {"img": ["./image/img6.jpg", "./image/img6_1.jpg", "./image/img6_2.jpg", "./image/img6_3.jpg"], "name": "Ferrari SF90 XX"} 
+]

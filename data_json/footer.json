@@ -1,0 +1,20 @@
+[
+    {"title" : "Products", "list" : ["Used", "New", "Military", "Site Map"]},
+    {"title" : "Resources", "list" : ["Blog", "FAQ", "Contact Us"]}, 
+    {"title" : "Work With TrueCar", "list" : ["Dealers", "Partners", "Friends"]}, 
+    {"title" : "About Us", "list" : ["Team", "Careers", "Press", "Investors"]},
+    {"title" : "Social Media", 
+    "container_link" : ["https://www.facebook.com/profile.php?id=100021742410548", 
+    "https://www.instagram.com/th.trong510/", "https://github.com/thTrong510/thTrong510.github.io", ""],
+    "container_app" : [ " Facebook", " Instagram", " GitHub", " Linkedin"],
+    "container_class_icon" : ["icon fab fa-facebook-f", "icon fab fa-instagram", "icon fab fa-github", "icon fab fa-linkedin-in"]},
+
+    {"footer_social_icon_href": ["https://www.facebook.com/profile.php?id=100021742410548", "https://www.instagram.com/th.trong510/", 
+    "https://github.com/thTrong510/thTrong510.github.io", "", ""], 
+    "footer_social_icon_icon": ["icon fab fa-facebook-f", "icon fab fa-instagram", "icon fab fa-github", "icon fab fa-linkedin-in", "icon fab fa-youtube"]},
+
+    {"footer_apps_href": ["", ""],
+    "footer_apps_src": ["./treasure/apple_logo.png", "./treasure/google_play.png"], 
+    "footer_apps_name": ["App Store", "Google Play"], 
+    "footer_apps_alt": ["apple_logo", "google_play"]}
+]

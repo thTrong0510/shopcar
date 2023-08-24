@@ -1,0 +1,80 @@
+body{
+    background-color: #eaeaea;
+}
+.figure-head_container {
+    position: relative;
+    padding: 5rem;
+
+    height: 570px;
+}
+#figure-head_slide {
+    /*độ dài bằng nội dung bên trong*/
+    width:max-content;
+    margin-top:50px;        
+}
+.figure-head_item {
+    /*đưa ảnh vào khung giữa*/
+    transition: 2s;
+
+    /*chỉnh bg-image -> (vector) không bị bể hình*/
+    background-size: cover;
+    background-position: 50% 60%;
+    position: absolute;
+
+    /*canh giữa trên dưới*/
+    left:0;
+    top:0;
+    bottom: 0;
+    right: 0;
+
+    width: auto;
+    height: auto;
+
+    /*bỏ transform(0, -50%) ở trên*/
+    transform: translate(0,0);
+}
+
+.figure-head_item:nth-child(n + 2) {
+    opacity: 0.02;
+}
+
+
+.figure-head_item .figure-head_content {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    transform: translate(-10%,-10%); 
+    text-align: left;
+    color:#eee;
+
+    /*cho tất cả các content của thẻ khác ẩn chỉ giữ lại cái chính*/
+    display: none;
+    font-family: cursive;
+}
+.figure-head_item:nth-child(1) .figure-head_content {
+    /*hiện content của cái chính*/
+    display: block;
+    z-index: 2;
+}
+
+.figure-head_item .figure-head_name {    
+    font-size: 2rem;
+    font-weight: bold;
+    opacity: 1;
+    margin-left: -1000px;
+    animation:showcontent 3s ease-in-out 1 forwards;
+}
+
+@keyframes showcontent {
+    from {
+        opacity: 0;
+        margin-left: -1000px;
+        /*tạo độ nhòe cho chữ*/
+        filter:blur(33px);
+    }
+    to {
+        opacity: 1;
+        margin-left: 0;
+        filter:blur(0);
+    }
+}

@@ -1,0 +1,458 @@
+body {
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer {
+    margin-top: 50px;
+    box-shadow: 32px 0px 32px rgba(0, 0, 0, 1);
+}
+
+/*Nguyen khung den*/
+#footer_container {
+    background-color: #24262b;
+    margin: auto;
+    padding: 2rem;
+}
+
+/*chua thong tin va icon*/
+#container__details {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*chinh titel_footer*/
+.footer_col h3.title {
+    display: inline-block;
+    color: white;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    position: relative;
+}
+
+/*thiet lap duong ke ben duoi title_footer*/
+.footer_col h3.title::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 0;  
+    box-sizing: border-box;
+    background-color: #ffffff;
+    left: 0;
+    bottom: -5px;
+    transition: all 0.3s ease;
+}
+
+.footer_col h3.title:hover::before {
+    width: 100%;
+}
+
+/*Tao duong ngan cach giua cac thanh phan khi responsive*/
+.footer_col:nth-child(n + 2) {
+    position: relative;
+}
+
+/*chinh danh sach footer*/
+.list {
+    margin-top: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+.list > li:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.list > li > a {
+    display: block;
+    color: #bbbbbb;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.list > li > a:hover {
+    color: #ffffff  ;
+    padding-left: 0.5rem;
+}
+
+/*phan cuoi cua footer luu social icon*/
+#footer_app-social-icon {
+    margin-top: 2rem;
+    display: flex;
+    position: relative;
+}
+
+
+/*phan cua app*/
+.footer_apps {
+    height: 3rem;
+    flex: 50%;
+    justify-content: end;
+    display: flex;
+}
+
+.footer_app {
+    outline: solid 0px #bbbbbb;
+    transition: outline 0.1s ease;
+
+    text-align: left;
+
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+        
+    position: relative;
+    border: 1px solid #525760;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.footer_app:not(:last-child) {
+    margin-right: 2rem;
+}
+
+.footer_app:nth-child(1)::before {
+    content: "Available on the";
+    color: #bbbbbb;
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    font-size: 0.8rem;
+}
+
+.footer_app:nth-child(2)::before {
+    content: "Get it On";
+    color: #bbbbbb;
+    position: absolute;
+    top: 15%;
+    right: 46%;
+    font-size: 0.8rem;
+}
+
+.footer_app:hover {
+    outline-width: 0.1rem;
+}
+
+.footer_app > span {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #bbbbbb;
+}
+
+.footer_app > a, img {
+    display: inline-block;
+    height: 100%;
+}
+
+/*phan cua Icon*/
+.footer_icons {
+    flex: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer_social-icon {
+    width: 20%;
+}
+
+.footer_social-icon > a {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.5rem;
+    border: 1px solid #bbbbbb;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border-radius: 40%;
+    transition: all 0.2s ease;
+
+    /*chỉnh icon ở giữa*/   
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+.footer_social-icon > a:hover {
+    color: black;
+    background-color: white;
+}
+
+.footer_social-icon > a > .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+/*infor final*/
+.footer_infor {
+    margin-top: 3rem;
+    position: relative;
+    color: #ffffff;
+    font-size: 0.8rem;
+}
+
+.footer_infor a {
+    cursor: pointer;
+    color: #525760;
+}
+
+.footer_infor a:hover {
+    color: #ffffff;
+}
+
+
+.footer_infor > .footer_infor-first p {
+    text-align: center;
+    margin: 0;
+}    
+
+.footer_infor > .footer_infor-first p sup {
+    font-size: 0.5rem;
+}
+
+.footer_infor > .footer_infor-second {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_infor-second > div:last-child {
+    border: none !important;
+}
+
+.footer_infor-second div {
+    font-size: 0.7rem;
+    padding: 0 1rem 0 1rem;
+    border-right: 1px solid #525760;
+}
+
+/*responsive footer*/
+@media screen and (max-width: 800px)
+{
+    .footer_col {
+        width: 50%;
+        margin-bottom: 4rem;
+    }
+
+    /*Tao duong ngan cach giua cac thanh phan khi responsive*/
+    .footer_col:nth-of-type(n + 3)::before {
+        content: "";
+        position: absolute;
+        top: -2rem;
+        left: 0;
+        right: 0;
+        height: 0.1rem;
+        background: #525760;
+    }
+
+    /*lam cho duong gach keo full thanh phan*/
+    .footer_col:nth-of-type(2n+1)::before {
+        right: 0;
+    }
+
+    /*tao hieu ung cho chu khi hover*/
+    .list > li > a:hover {
+        padding-left: 1.5rem;
+    }
+
+    /*thanh phan cuoi chua social icon*/
+    #footer_app-social-icon::before {
+        content: "";
+        height: 0.1rem;
+        top: -2rem;
+        left: 0;
+        right: 0;
+        background: #525760;
+        position: absolute;
+    } 
+
+    #footer_app-social-icon {
+        flex-wrap: wrap;
+    }
+
+    .footer_apps {
+        flex: 100%;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .footer_app {
+        margin-left: 2.1rem;
+    }
+
+    .footer_apps > .footer_app {
+        margin-right: 1rem;
+    }
+
+    .footer_icons {
+        flex: 100%;
+        justify-content: space-between;
+    }
+
+    .footer_social-icon {
+        text-align: center;
+        width: 10%;
+    }
+
+    /*cang giua cho moi thanh phan*/
+    .footer_col {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer_infor::before {
+        content: "";
+        height: 0.1rem;
+        top: calc(-1rem - 11px);
+        left: 0;
+        right: 0;
+        background: #525760;
+        position: absolute;
+    }
+}   
+
+@media screen and (max-width: 545px) {
+    .footer_infor > .footer_infor-second {
+        flex-wrap: wrap;
+    }
+    .footer_infor-second > div:last-child {
+        flex: 100%;
+        text-align: center;
+    }
+    .footer_infor-second > div:nth-child(2) {
+        border: none !important;
+    }
+}
+
+
+@media screen and (max-width: 470px) {
+    .footer_col {
+        width: 100%;
+    }
+
+    /*tao duong ke giua cac thanh phan*/
+    .footer_col:nth-of-type(n + 2)::before {
+        content: "";
+        position: absolute;
+        top: -2rem;
+        left: 8%;
+        right: 8%;
+        height: 0.1rem;
+        background: #525760;
+    }
+
+    .footer_apps > .footer_app {
+        margin-right: 0;
+        margin-left: 1rem;
+    }
+
+
+    /*last infor*/
+    .footer_infor {
+        font-size: 0.6rem;
+    }
+
+    .footer_infor > .footer_infor-first p sup {
+        font-size: 0.3rem;
+    }
+
+    .footer_infor-second div {
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 404px) {
+    .footer_social-icon {
+        width: 8%;
+    }
+
+    .footer_social-icon > a {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .footer_apps {
+        justify-content: center; 
+    }
+
+    .footer_apps > .footer_app {
+        margin-left: 0;
+        padding-right: 0.4rem;
+        margin: 0;
+    }
+
+    .footer_apps > .footer_app:first-child {
+        margin-right: 1rem !important;
+    }
+
+    .footer_apps > .footer_app > span {
+        font-size: 1rem;
+    }
+
+    .footer_app:nth-child(1)::before {
+        top: 20%;
+        right: 10%;
+        font-size: 0.6rem;   
+    }
+
+    .footer_app:nth-child(2)::before {
+        top: 20%;
+        right: 44%;
+        font-size: 0.6rem;
+    }
+
+}
+
+@media screen and (max-width: 335px)
+{
+    .footer_apps {
+        margin-top: 1.5rem;
+    }
+
+    .footer_apps > .footer_app {
+        padding-right: 0.1rem;
+        padding-top: 0.2rem;
+        padding-left: 0.2rem;
+
+        border: none;
+        pointer-events: none;
+    }
+
+    .footer_apps > .footer_app > a {
+        padding: 0.5rem;
+
+        border: 1px #525760 solid;
+        border-radius: 2rem;
+    }
+
+    .footer_apps > .footer_app > span {
+        display: none;
+    }
+
+    .footer_app:nth-child(1)::before {
+        content: "";
+    }
+
+    .footer_app:nth-child(2)::before {
+        content: "";
+    }
+
+    .footer_infor {
+        font-size: 0.5rem;
+    }
+
+    .footer_infor > .footer_infor-first p sup {
+        font-size: 0.2rem;
+    }
+
+    .footer_infor-second div {
+        font-size: 0.4rem;
+    }
+
+}

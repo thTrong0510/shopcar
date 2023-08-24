@@ -1,0 +1,86 @@
+#account {
+    position: fixed;
+    bottom: 2rem;
+    right: 1rem;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 6000;
+    background-color: rgb(49, 54, 54);
+
+    transition: bottom 1s;
+}
+#account:hover {
+    background-color: white;
+}
+
+#account > a {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#account > label > img {
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#account > label > input {
+    display: none;
+}
+.account_log_out {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: 250px;
+    height: 150px;
+    border-radius: 20px;
+    background-color:  rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+.account_log_out > button {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    right: 10%;
+    transform: translateY(-50%);
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color:  rgba(63, 114, 76, 0.7);
+    color: rgb(209, 209, 209);
+    cursor: pointer;
+}
+.account_log_out > button:hover {
+    background: rgba(56, 204, 93, 0.7);
+    color: rgb(255, 255, 255);
+}
+
+.log_out_delete {
+    position: absolute;
+    right:0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #596d7d;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    border-radius: 0 14px 0 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+.log_out_delete > button {
+    background-color: #596d7d;
+    border: none;
+    cursor: pointer;
+}

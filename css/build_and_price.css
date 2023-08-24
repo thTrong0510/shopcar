@@ -1,0 +1,104 @@
+
+/*tab build and price*/
+.main_build_and_price{
+    display: flex;
+    margin:50px;
+}
+.left{
+    width:50%;   
+}
+.right{
+    width:50%;
+}
+.button_new_used{
+    display:flex;
+    border-bottom: 1px solid black;
+    width:max-content;
+    margin-bottom: 30px;
+}
+
+.list_build_and_price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.list_build_and_price > div{
+    width: 33.3%;
+    margin: 10px 0;
+}
+.list_build_and_price > div > div{
+    padding: 5px 0;    
+    width:max-content;
+    position: relative;   
+}
+.list_build_and_price > div > div > a{
+    color:black;
+}
+.list_build_and_price > div > div > a::before{
+    content: "";
+    border-radius:10px 10px  0 0;
+    height: 4px;
+    width: 0;
+    bottom: 0;
+    left:50%;
+    background-color: rgb(0, 162, 255);
+    position: absolute;
+    transition: 0.3s;
+}
+.list_build_and_price > div > div.show_before{
+    font-weight: 600;    
+}
+.list_build_and_price > div > div.show_before > a::before{
+    left: 0;
+    width: 100%;
+} 
+.active_build_price{
+    display: flex;
+    flex-wrap: wrap;
+}
+.item_build_and_price{
+    width: 33.3%;
+}
+.item_build_and_price > div > img{
+    width:100%;
+    padding:  0 15px;
+}
+.des_build_and_price{
+    text-align: center;
+    color:rgb(99, 103, 103)
+}
+.name_car_build_price{
+    text-align: center;
+}
+/*rigth*/
+.right > div{
+    display: none;
+}
+.show{
+    display:block !important;
+}
+@media screen and (max-width: 1024px){
+    .item_build_and_price{
+        width: 50%;
+    }
+    .build_and_price{
+        width: calc(50vw);
+    }
+}
+@media screen and (max-width: 768px){
+    .list_build_and_price > div{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 556px){
+    .item_build_and_price{
+        width: 100%;
+    }
+    .list_build_and_price > div{
+        width: 100%;
+    }
+    .build_and_price{
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CarShop</title>
+    <link rel="short icon" href="image/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/build_and_price.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    
+    <!--Hearder-->
+    <header class="flex header">
+        <div class="flex header">
+            <div class="logo">
+                <i class="fa-brands fa-slack"></i>
+            </div>
+            <div><h1><a href="bai_tap_lon.html">My CarShop</a></h1></div>
+        </div>      
+        <ul class="flex main menus" id="main">
+            <li class="has_child" id="hover"><span id="hover1">SHOP</span>
+                <ul class="subject" id="child_menu" >
+                    <li><a href="./">View Cars</a></li>
+                    <li><a href="./">Specials</a></li>
+                    <li><a href="./">Get Financing</a></li>
+                    <li><a href="./">Home Delivery</a></li>
+                    <li><a href="./">Curbside Pickup</a></li>
+                    <li><a href="./">About Buying Online</a></li>
+                </ul>
+            </li>
+            <li><span>TRADE/SELL</span></li>
+            <li><span><a href="why_carshop.html" style="color:aliceblue">WHY CARSHOP</a></span></li>
+            <li><span>CAREERS</span></li>
+            <li><span>SERVICE</span></li>
+            <li><span>STORES</span></li>
+        </ul>
+        
+
+        <ul class="flex icons menus ">
+            <li><span><i class="icon fa-solid fa-magnifying-glass" id="search-buttom"></i></span></li>
+            <li id="phone"><span><i class="icon fa-solid fa-phone"></i></span>
+                <ul class="subject" id="child_phone">    
+                    <li><a>0328 481 957</a></li>
+                </ul>   
+            </li>
+            <li id="toggle"><span>  
+                <i class="fas fa-bars icon"></i>
+                <i class="fas fa-xmark icon"></i>
+                </span>
+            </li>
+        </ul>
+        <div class="search-form" id="search">
+            <div>
+                <input type="search" id="search-box" placeholder="Tìm Kiếm..."/>
+                <a><label for="search-box" class="fa-solid fa-magnifying-glass"></label></a>
+            </div>
+            <ul class="list-search">
+
+            </ul>
+        </div>
+    </header>
+    <!--Build and price-->
+    <div class="main_build_and_price">
+        <div class="left">
+            
+            <div class="list_build_and_price">
+                <!-- <div>
+                    <div><a href="#acura">Acura</a></div>
+                </div> -->
+            </div> 
+        </div>
+        <div class="right">
+            <!-- <div id="acura">
+                <divclass="active_build_price">
+                    <div class="item_build_and_price">
+                        <img src="./img_build_price/img1.avif"/>
+                        <div class="content_build_price">
+                            <div class="name_car_build_price">Integra</div>
+                            <div class="des_build_and_price">Starting at $32,695</div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    
+    <!--footer-->
+    <footer class="footer">
+        <div id="footer_container">
+            <div id="container__details"></div>
+            <div id="footer_app-social-icon" >
+                <div class="footer_icons"></div>
+                <div class="footer_apps"></div>
+            </div>
+            <div class="footer_infor">
+                <div class="footer_infor-first">
+                    <p>For questions about the TrueCar Auto Buying Service please call <a>0867663653</a></p>
+                    <p>&#9400; and <sup>TM</sup> TrueCar, Inc. All rights reserved. Vehicle photos &#9400; Evox Images &#9400; 2023 Chrome Data Solutions, LP</p>
+                </div>
+                <div class="footer_infor-second">
+                    <div><a>Terms of Service</a></div>
+                    <div><a>Privacy PolicyDo</a></div>
+                    <div><a>Not Sell Or Share My Personal Information</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--script-->
+    <script src="./javascript/build_and_price.js"></script>
+    <script src="javascript/bai_tap_lon.js"></script>
+    <script src="javascript/read_data_footer.js"></script>
+</body>
+</html>

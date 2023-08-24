@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.why{
+    display: flex;
+    background-color: #fff;
+    padding-bottom: 3.75rem;
+}
+.why .left{
+    width: 50%;
+    padding: 10.3125rem 0 0 10.3125rem;
+}
+.why .left > h1{
+    font-size: 3.75rem
+}
+.why .left > div{
+    font-size: 1.5625rem;
+    line-height: 2.1875rem;
+}
+.why .right{
+    width: 50%;
+}
+.why .right img{
+    width: 100%;
+}
+.better-experience{
+    background-color: #e54592; 
+    width: 100%;   
+}
+.better-experience > .top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.better-experience > .top{
+    padding: 7.3125rem 0 3.3125rem 0;
+}
+.better-experience > .top > .better-experience-left{
+    width: 50%;
+    padding-left: 7.3125rem;
+    color: #fff;
+}
+.top > .better-experience-left > h1{
+    font-size: 3.75rem;
+}
+.top > .better-experience-left > div{
+    font-size: 1.5rem;
+}
+.better-experience > .top > .better-experience-right{
+    width: 50%;
+}
+.better-experience-right > .video > iframe{
+    border-radius: 15px;
+    width:80%;
+    aspect-ratio: 16 / 9;
+}
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;    
+}
+.bottom .square{
+    margin: 10px;
+    background-color: #fff;
+    width: calc(33.3% - 20px);
+    height: 250px;
+    border-radius: 10px;
+    padding: 1.6875rem 1.875rem 0 1.875rem;
+    position: relative;
+    transition: 0.3s;
+
+}
+.bottom .square h3{
+    font-size: 1.5625rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.bottom .square >div{
+    font-size: 1.125rem;
+}
+.bottom .square .title-bar{
+    width: 95%;
+    height: 8px;
+    background-color: #cdcfd0;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+.bottom .square .filler{
+    width: 94%;
+    height: 100%;
+    background: linear-gradient(90deg,#394144,#e54592);
+    border-radius: 20px;
+}
+.bottom .square .icon-plus{
+    color: #fff;
+    position: absolute;
+    bottom: 30px;
+    left:50%;
+    transform: translateX(-50%);
+    background-color: rgb(59, 57, 57);
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.show-des{
+    background-color: #394144 !important;
+    color: #fff;
+}
+.fa-solid.fa-plus{
+    transition: 0.3s;
+}
+.handle-icon .fa-solid.fa-plus{
+    transform: rotate(-45deg);
+    color: black;
+}
+.icon-plus.handle-icon{
+    background-color: #fff !important;
+}
+.better-experience.blue{
+    background-color: #38a8e0;
+}
+
+@media screen and (max-width: 890px){ 
+    .why .right img{ 
+        height: 30%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .top > .better-experience-left > h1{
+        font-size: 2.5rem;
+    }
+    .bottom .square{
+        width: 50%;
+    }
+    .why .left > h1{
+        font-size: 2.75rem
+    }
+   
+}
+@media screen and (max-width: 600px){
+    .better-experience > .top > .better-experience-left,
+    .better-experience > .top > .better-experience-right{
+        width:90%;
+        padding-left: 0;
+        text-align: center;
+    }
+    .why .left{
+        width: 50%;
+        padding: 5.3125rem 0 0 5.3125rem;
+    }
+}
+@media screen and (max-width: 400px){
+    .bottom .square{
+        width: 90%;
+    }
+}

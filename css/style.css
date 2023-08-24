@@ -1,0 +1,580 @@
+*{
+    font-family: HurmeGeometricSans2-Regular,Helvetica Neue,Helvetica,Arial,sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+}
+
+a{
+    text-decoration: none;
+}
+header{
+    position:relative; 
+    max-width: 100%;
+    background-color: rgb(62, 60, 60);
+    z-index: 10;
+}
+header h1{
+    font-size: 25px;
+}
+header h1 a{
+    color:white;
+}
+.logo{
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo > i{
+    font-size: 3rem;
+    color:#fff;
+}
+.flex{
+    display: flex;
+}
+.header{
+    justify-content: space-between;
+    align-items: center;
+}
+ul > li{
+    list-style-type: none;
+}
+/*thiết lập menu chính*/
+.menus > li{
+    color:aliceblue;
+    cursor: pointer;
+    position:relative;      
+}
+.main.menus > li{
+    padding: 25px 10px;
+}
+.icons.menus > li{
+    padding: 5px 10px;
+}
+.menus > li > span{
+    transition: 0.2s color;
+    text-decoration: none;
+}
+.menus > li:hover{
+    color: white;
+}
+.show-menu{
+    opacity: 1 !important;
+    top: 100% !important;
+}
+/* thiết lập icon*/
+.icon{
+    width: 2rem;
+}
+.icons .icon{
+    box-sizing: border-box;
+    padding: 15px 5px;
+}
+.icons .icon:hover{
+    fill: white;
+}
+#toggle{
+    margin-left: 20px;    
+    position: relative; 
+    display: none;
+}
+
+.show-icon .fas.fa-bars{
+    opacity: 0;
+    transform: rotate(-90deg);
+}
+.show-icon .fas.fa-xmark{
+    opacity: 1;
+    transform: rotate(-90deg);
+}
+.fas.fa-xmark{
+    opacity: 0;
+}
+.fas.fa-xmark,
+.fas.fa-bars{
+    top:2px;
+    right: 0;
+    position: absolute;
+    font-size: 20px;
+    transition: 0.1s opacity, 0.4s transform;
+}
+
+/* thiết lập menu con*/
+.subject{
+    width: 350%;   
+    border-radius: 15px;
+    position:absolute;
+    display: none;
+    transition: 0.3s;
+    background-color: rgb(62, 60, 60);
+    top:100%;
+}
+.subject.active{
+    display: block;
+}
+
+.subject > li{
+    border-bottom: 1px solid white; 
+    padding: 15px 20px;
+}
+.subject > li:first-child{
+    border-radius: 15px 15px 0 0;
+}
+.subject > li:last-child{
+    border-radius: 0 0 15px 15px;
+}
+.subject > li > a{
+    font-size: 20px;
+    color:white;
+    text-decoration: none;
+}
+.subject > li:hover{
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+/* thiết lập border khi hover vào menu chính*/
+.menus.main > li > span::before{
+    content: "";
+    height: 4px;
+    width: 0;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s     width;
+}
+.menus.main > li:hover span::before{
+    width: 100%;
+}
+.icons.menus .subject{
+    width: 350%;
+    right: 0;
+}
+.icons.menus .subject > li{
+    border-radius: 15px;
+}
+.menus > li.has_child::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f107";
+    position: absolute;
+    right: -5px;
+}
+.menus > li.has_child:hover::after{
+    color:white;
+}
+/* thiết lập thanh tìm kiếm*/
+.search-form{
+    position:absolute;
+    top: 100%;
+    right: 5%;
+    width: 40%;
+    align-items:center;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.1s transform;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.search-form.show-search{
+    transform: scaleY(1);
+}
+.search-form div{
+    width: 100%;
+}
+.search-form div label{
+    color:black;
+}
+.search-form input{
+    width: 90%;
+    height: 40px;
+    color: black;
+    text-transform: none;
+    margin-right: 5px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+.search-form > ul{
+    width: 90%; 
+    background-color: white;
+}
+.search-form > ul > li{
+    padding: 5px 10px;
+}
+@media screen and (max-width: 280px){
+    header h1{
+        font-size: 15px;
+    }
+}
+/*body*/
+.button{
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+.button button{
+    width: 50px;
+    cursor: pointer;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    transition: 0.5s;
+    color:black;
+    background-color: #3e3d3d44;
+}
+.button button:hover{
+    background-color: black;
+    color: white;
+}
+.item{
+    color: black;
+    box-shadow: none;
+    border-radius: 15px;
+    width: 300px;
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+    transition: 0.5s;
+    margin: 10px;
+    background: white;
+    border: 1px solid black;
+    scroll-snap-align: end;/*các item sẽ vào tiêu điểm khi ngừng cuộc, tiêu điển là start*/
+}
+.item:hover{
+    margin-top: 5px;
+    box-shadow: 0 2px 5px #979a9c ;
+}
+.slide-content{
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 10px;
+}
+.year{
+    width: 100%;
+    font-weight: 600;
+}
+.slide-name-car{
+    width: 50%;
+    font-size: 20px;
+    font-weight: 600;
+}
+.slide-price-car{
+    width: 50%;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 600;
+}
+.speed{
+    width: 70%;
+    text-align: right;
+}
+.slide-name-country{
+    width: 30%;
+}
+.item .img{
+    width: 100%;
+    height: 70%;
+}
+
+#slide{
+    display:flex;
+    width:max-content;
+}
+#formLide{
+    width: 1280px;
+    max-width: 100%;
+    overflow: auto;
+    margin: 20px auto;
+    scroll-behavior: smooth;/* hiệu ứng cuộc mượt cho tài liệu*/
+    scroll-snap-type: both;/* chỉnh lại vị trí khi dừng cuộn , both: chỉnh theo trục x và y*/
+}
+/* thiết kế lại thanh trược*/
+#formLide::-webkit-scrollbar{
+    display: none;
+}
+/*tab child*/
+.container{
+    max-width: 50%;
+    position: relative;
+    margin: 25px 30px;
+}
+.container .wrapper{
+    width: 100%;
+    aspect-ratio: 13 /8;/*tỉ lệ của height so với width*/
+    overflow: hidden;
+    position: relative;
+}
+.container .main-img{
+    display: flex;
+    position: relative;
+    transition: 0.5s;
+
+}
+.item-img{
+    width: 100%;
+    flex: 1 0 100%;
+}
+.item-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container button{
+    width: 25px;
+    height: 50px;
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.5s;
+    z-index: 10;
+    opacity: 0;
+}
+.wrapper:hover button{
+    opacity: 1;
+}
+.container button:hover{
+    color: white;
+    background-color: black;
+}
+.container button.prev-c{
+    border-radius: 0 20px 20px 0;
+}
+.container button.next-c{
+    border-radius: 20px 0 0 20px;
+    right: 0;
+}
+.button-img{
+    display: flex;  
+    width: 100%;
+}
+.button-img div{
+    width: 25%;
+    padding: 3px;
+}
+.button-img div img{
+    width: 100%;
+    height: 100%;
+}
+.active-img{
+    background-color: rgb(0, 208, 255);
+}
+.flex_temp{
+    display:flex;
+}
+.des{
+    background-color: #1e1f20;
+    color:white;
+    width: 350px;
+    aspect-ratio: 7 / 8 ;
+    margin: 25px auto;
+    position: relative;
+}
+.des > div{
+    padding: 1rem;
+}
+.des .price div:nth-child(1){
+    color:#979a9c;
+}
+.des .price div:nth-child(2){
+    font-size: 20px;
+}
+button.contact{
+    font-size:17px;
+    width: 90%;
+    height: 50px;
+    position: absolute;
+    left: 17.5px;
+    bottom: 20px;
+    border: none;
+    transition:  0.5s;
+}
+button.contact:hover{
+    background-color: black;
+    color:white;
+}
+.info-product{
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.info-product > li{
+    color:white;
+    cursor: pointer;
+    position: relative;
+    margin: 0 10px;
+    padding: 10px;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+.info-product > li:hover{
+    color:black !important;
+    background-color: white;
+    box-shadow: 0 0 5px white,  0 0 10px white,  0 0 15px white;
+}
+.show_info{
+    color:black !important;
+    background-color: white;
+    box-shadow: 0 0 5px white,  0 0 10px white,  0 0 15px white;
+}
+.info-product > li:hover > span::before{
+    width: 100%;
+}
+/*bảng thông tin xe*/
+.tab-ts{
+    width: 100%;
+    justify-content:space-around;
+    background-color: #1e1f20;
+    color:white;
+    padding: 30px 0;
+    flex-wrap: wrap;
+    display:flex;
+}
+.tab-ts > div > div{
+    margin-bottom: 30px;
+}
+.tab-ts > div > div > p{
+    margin-bottom: 10px;
+}
+.tab-ts > div > div > p:nth-child(2){
+    color:#979a9c;
+}
+/*tab trang bị*/
+.tab-tb{
+    background-color: #1e1f20;
+    color: white;
+}
+.list-child{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tab-tb > div:nth-child(1){
+    border-bottom: 1px solid white;
+}
+.tab-tb > div:nth-child(1){
+    padding-top: 30px;
+    margin: 0 30px 0 60px; 
+}
+.tab-tb > div:nth-child(2){
+    margin: 0 30px 0 75px; 
+}
+.tab-tb > div > li{
+    margin: 30px 0;
+    width: 50%;
+    
+}
+/* giao diện Ipad*/
+@media screen and (max-width: 1024px){
+    #main{
+        flex-direction: column;
+        position:absolute;
+        width: 100%;
+        background-color: rgb(62, 60, 60);
+        top:80%;
+        right:0;
+        overflow: auto;
+        opacity: 0;
+        transition: 0.4s top, 0.3s opacity;
+    }
+    #toggle:hover #main{
+        display:block;
+        right: 0;
+    }
+    .main.menus > li{
+        color:aliceblue;
+        padding: 15px;
+        border-bottom: 1px solid rgb(75, 74, 74);
+    }
+    .menus.main > li:hover span::before{
+        width:0;
+    }
+
+    #toggle{
+        display:inline;
+    }
+    /*thiết lập cho menu con*/
+    #child_menu{
+        position: relative;
+        width: 100%;    
+    }
+    #child_menu li{
+        border-bottom: none;
+        border-radius: 0;
+    }
+    /*thiết lập cho sdt */
+    .icons .subject li{
+        border:1px solid white ;
+    }
+
+    .menus > li.has_child::after{
+        top: 15px;
+        right: 15px;
+    }
+    .search-form{
+        width: 90%;
+    }
+   .item{
+    width: calc(33.3vw - 20px);/*33.3vw bằng 33.3% tỷ lệ màng hình theo chiều ngang*/
+   }
+   .button{
+    display: none;
+   }    
+   .flex_temp{
+    display:block;
+   }
+   .container{
+    max-width: 100%;
+   }
+   /*================*/
+   .tab-ts{
+    display:block;
+   }
+   .tab-ts > div:nth-child(1){
+    padding: 10px 0;
+    margin: 0 30px 40px 30px;
+    border-bottom: 1px solid white;
+   }
+   .tab-ts > div > div{
+    display:flex;
+   }
+   .tab-ts > div > div > p{
+    margin: 0 30px;
+   }
+   .tab-ts > div > div > p:nth-child(1){
+    width: 50%;
+   }
+   .tab-ts > div > div > p:nth-child(2){
+    width: 50%;
+    text-align: right;
+   }
+   .tab-tb > div > li{
+    width: 100%;
+   }
+   .slide-name-car{
+    font-size: 15px;
+   }
+}
+/*Giao diện mobie*/
+@media screen and (max-width: 768px){
+    .item{
+        width: calc(50vw - 20px);/*33.3vw bằng 50% tỷ lệ màng hình theo chiều ngang*/
+       }
+    
+}
+@media screen and (max-width: 505px){
+    .slide-name-car{
+        font-size: 10px;
+       }
+    .slide-content{
+        font-size: 10px;
+    }
+    .slide-price-car{
+        font-size: 15px;
+    }
+}

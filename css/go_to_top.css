@@ -1,0 +1,44 @@
+#progress {
+    position: fixed;
+    bottom: 2rem;
+    right: 1rem;
+    opacity: 0;
+    height: 60px;
+    width: 60px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    animation: opa 1.5s 1 forwards;
+    animation: opa_ 1.5s 1 forwards;
+    transition: right 1.5s;
+    z-index: 5000;
+}
+#progress-value {
+    display: block;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    color: #001a2e;
+    cursor: pointer;
+    z-index: 1000;
+}
+@keyframes opa {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

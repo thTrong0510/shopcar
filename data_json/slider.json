@@ -1,0 +1,8 @@
+[
+    {"img": "./image/img1.jpg", "name_car" : "Bugatti Bolide", "price": "100.000$", "name_country" : "Italy"},
+    {"img": "./image/img2.jpg", "name_car" : "Bugatti Chiron", "price": "200.000$", "name_country" : "Mexico"},
+    {"img": "./image/img3.jpg", "name_car" : "Hybrid", "price": "300.000$", "name_country" : "Italia"},
+    {"img": "./image/img4.jpg", "name_car" : "Farnova Othello", "price": "400.000$", "name_country" : "Italia"},
+    {"img": "./image/img5.jpg", "name_car" : "Mercedes-Benz AMG GT", "price": "500.000$", "name_country" : "China"},
+    {"img": "./image/img6.jpg", "name_car" : "Ferrari SF90 XX", "price": "600.000$", "name_country" : "India"}
+]

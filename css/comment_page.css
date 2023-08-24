@@ -1,0 +1,286 @@
+body {
+    background-color: #f8f8f8;
+}
+
+.comment_part {
+    background-color: white;
+    width: 80%;
+    height: 920px;
+    margin: 2rem auto 10px auto;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.comment_part_title h3 {
+    padding: 10px;
+    text-align: center;
+}
+
+.comments {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 90%;
+    height: 700px;
+    background-color: #e1e4ea;
+    margin: 1rem auto 1rem auto;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    overflow: hidden;
+
+    row-gap: 1.5rem;
+}
+
+.comment {
+    background-color: white;
+    width: 40%;
+    height: 45%;
+    padding: 5%;
+
+    border-radius: 1.5rem;
+
+    position: relative;
+}
+
+.comment_delete {
+   position: absolute;
+   top: 1%;
+   right: 2%;
+   cursor: pointer;
+}
+
+.comment_delete > button {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    display: block;
+    border: none;
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+
+.comment_delete > button:hover {
+    border: 1px solid black;
+}
+
+.comment_delete > button > i {
+    color: black;
+}
+
+.comment_des {
+    position: relative;
+    overflow: auto;
+}
+
+.comment_des > span {
+    font-size: 1.5rem;
+}
+
+.comment_information {
+    margin-top: 1rem;
+}
+
+.comment_des > .comment_information > a > i {
+    color: #6181b8;
+}
+
+.comment_image {
+    width: 20%;
+
+    position: absolute;
+
+    top: 10%;
+    left: -2rem;
+}
+
+.comment_image > img {
+    display: block;
+    width: 100%;
+
+    border-radius: 50%;
+}
+
+
+.check_comment {
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+}
+
+#comment_limit, #check_yours_comment_ {
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background-color: #e1e4ea;
+    cursor: pointer;
+    text-align: center;
+
+    margin-right: 2.5rem;
+}
+
+#comment_limit:hover, #check_yours_comment_:hover {
+    background-color: black;
+    color: white;
+}
+
+#comment_limit > input {
+    display: none;
+}
+
+#yours_comment {
+    margin-top: 1rem;
+    text-align: center;
+    width: 100%;
+    display: none;
+    flex-wrap: wrap;
+}
+
+.comment_input::placeholder {
+    color: red;
+}
+
+.yours_comment_image {
+    box-sizing: border-box;
+    width: 10%;
+    text-align: right;
+    margin-right: 0.3rem;
+}
+
+.yours_comment_image img {
+    display: inline-block;
+    width: 40%;
+    border-radius: 50%;
+}
+
+.yours_comment_text {
+    width:50%;
+}
+
+.yours_comment_text input {
+    font-weight: bold;
+    padding: 0 10px;
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+.yours_comment_button {
+    position: relative;
+    width: 20%;
+}
+
+.yours_comment_button button {
+    width: 3rem;
+    height: 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    cursor: pointer;
+}
+
+.yours_comment_button button:hover {
+    outline: 2px black solid;
+}
+
+#check_yours_comment_ > input {
+    display: none;
+}
+
+.yours_comment_button_toggle {
+    background-color: black;
+    color: white;
+}
+
+.yours_comment_emotion {
+    position: absolute;
+    list-style-type: none;
+
+    bottom: -1.4rem;
+    right: 19%;
+
+    display: flex;
+}
+
+.yours_comment_emotion li {
+    position: absolute;
+}
+
+.yours_comment_emotion li button {
+    background-color: white;
+    border: none;
+    padding: none;
+}
+
+@media screen and(max-width: 1024px) {
+    .comment_part {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .comment {
+        width: 70%;
+    }
+
+    .comment_image {
+        left: -3.5rem;
+    }
+
+    .comment_des > span {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .comment {
+        width: 70%;
+        height: 35%;
+    }
+
+    .comment_image {
+        left: -3rem;
+    }
+
+    .comment_des > span {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .comment_image {
+        left: -2.5rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .comment_image {
+        left: -2rem;
+    }
+    .comment_des > span {
+        font-size: 0.9rem;
+    }
+
+    #comment_limit, #check_yours_comment_ {
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .comment_image {
+        left: -1.5rem;
+    }
+
+    .comment_des > span {
+        font-size: 0.8rem;
+    }
+
+    #comment_limit, #check_yours_comment_ {
+        margin-top: 10px;
+        margin-right: 1rem;
+    }
+}
