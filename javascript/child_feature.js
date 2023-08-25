@@ -191,6 +191,6 @@ function chosen()
             dealingCheckBox();  
         }
         else
-            window.location.href = "bai_tap_lon.html";  
+            window.location.href = "index.html";  
     })
 }
