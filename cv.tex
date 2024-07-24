@@ -1,0 +1,104 @@
+\documentclass[11pt,oneside,a4paper,titlepage]{article}
+\usepackage[most]{tcolorbox}
+\usepackage{geometry}
+\geometry{
+a4paper,
+left=0.1cm,
+right=0.1cm,
+top=0.1cm,
+bottom=0.1cm
+}
+\usepackage{graphicx} % Required for inserting images
+
+\definecolor{titleBack}{RGB}{0,66,21}
+
+\title{QuantitativeBytes}
+\author{Trong Nguyen}
+\date{July 2024}
+
+\begin{document}
+%set màu cho header
+\tcbset{colframe=gray!95!black,colback=titleBack,arc=0mm}
+\begin{tcolorbox}
+    \begin{minipage}{4.5cm}
+    %hspace8 -0.3cm bên trái, phải của bức 
+    \hspace*{0.5cm}\includegraphics[width=5cm]{myface.png} %height header
+    \end{minipage}
+    \begin{minipage}{15cm}
+        \begin{center}
+            \Huge{\textcolor{white}{Nguyen Van Thanh Trong}} \\
+            \vspace*{0.5cm}
+            \Large{\textcolor{white}{\emph{Front-end Developer}}}
+        \end{center}
+    \end{minipage}
+\end{tcolorbox}
+%set màu cho body
+\tcbset{colframe=white,colback=white,arc=0mm}
+\begin{tcolorbox}
+    \begin{minipage}[t]{8cm}
+        \vspace*{-0.5cm}
+        \begin{tcolorbox}[grow to left by=0.6cm,colback=gray!25,colframe=white]
+        \section*{Education}   
+        Information And Technology\\
+        Sophomore At Open UniverSity\\
+        GPA: 3.6/4 \\ \\ 
+        \section*{Skills}
+        \begin{itemize}
+        \item {Writing Tool: Latex}
+        \item {Front End: HTML, CSS, Javascript}
+        \item {Back End: NodeJs, PHP, Python}
+        \item {Data Base: MySQL, PostgreSQL} 
+        \item {background knowledge of computer networks} \\ \\
+        \end{itemize} 
+        \section*{Contact}
+        \begin{itemize}
+            \item {Tel: 0867663653}
+            \item {Email: vthanhtrongng@gmail.com}
+            \item {Birthday: 05-10-2004}
+            \item {Github: https://github.com/thTrong510}\\
+            /thTrong510.github.io \\ \\
+        \end{itemize}
+        \section*{Interests}
+        \begin{itemize}
+            \item {Read Technology-Related Literature}
+            \item {Learn about how artificial intelligence and machines work} \\ \\
+        \end{itemize}
+        \end{tcolorbox}
+    \end{minipage}
+    \begin{minipage}[t]{11cm}
+        \vspace*{-0.5cm}
+        \begin{tcolorbox}[grow to right by=0.75cm,colframe=white,colback=white]
+        \section*{About Me}
+        A sophomore information technology undergraduate passionate about becoming a skillful professional. Experience in using Latex, canva and some tools related to editing for website contents . Looking for a role in web content. \\ \\
+        \section*{AChievement}
+        \begin{enumerate}
+            \item {Effort and seriousness in learning: }
+            \begin{itemize}
+            \item {Get a scholarship for 3 consecutive semesters}\\ \\ 
+            \end{itemize}
+        \end{enumerate}  
+        \section*{Projects}
+        \begin{enumerate}
+            \item {Car Shop: In the process of finishing}
+            \begin{center}
+            \begin{tabular}{r l}
+            Language:& Javascript (JQuery) \\
+            Technologies:& Front End:  Html, Css \\ 
+            Source Code:& https://github.com/thTrong510/ \\
+                        & thTrong510.github.io \\
+            Visit web page:& https://thtrong510.github.io/ \\ \\ 
+            \end{tabular}
+            \end{center}
+            \item {Latex Code In My CV: }
+            \begin{center}
+            \begin{tabular}{r l}
+            Source Code:&  https://github.com/thTrong0510\\
+                     &/thTrong0510.github.io/blob/main/cv.tex
+            \end{tabular}
+            \end{center}
+        \end{enumerate}
+        
+        \end{tcolorbox}
+    \end{minipage}
+\end{tcolorbox}
+\end{document}
