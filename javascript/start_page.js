@@ -1,7 +1,7 @@
 function autoMoveSlide() {
     setInterval(() => {
-        let lists = document.querySelectorAll('.figure-head_item');
-        document.getElementById('figure-head_slide').prepend(lists[lists.length - 1]);  
+        let lists = document.querySelectorAll('figure-head_item');
+        document.getElementById('figure-head_slide').prepend(lists[lists.length - 1]);
     }, 5000)
 }
 
